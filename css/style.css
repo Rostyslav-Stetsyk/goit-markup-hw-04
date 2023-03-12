@@ -1,0 +1,419 @@
+/** ----------- General style ----------- */
+/** ----------- Colors -----------:
+#4D5AE5 - Primary brand
+#404BBF - Pressed state
+#2E2F42 - Dark (Overlays Shadows Headings)
+#31D0AA - Success 
+     graduation: opacity: 0.75; 
+     opacity: 0.5; 
+     rgba(49, 208, 170, 0.1) - 10%;  
+#434455 - Body text
+#8E8F99 - Subtle Text
+#E7E9FC - Accent
+#F4F4FD - Light mode
+#FFFFFF - Background color (text button, hero title)
+rgba(46, 47, 66, 0.4) - Modal overlay
+rgba(46, 47, 66, 0.7) - Hero background
+ */
+
+:root {
+    --body-text-color: #434455;
+    --primary-brand-color: #4D5AE5;
+    --dark-color: #2E2F42;
+    --pressed-state-color: #404BBF;
+    --white-color: #FFFFFF;
+    --light-mode-color: #F4F4FD;
+    --accent-color: #E7E9FC;
+}
+
+body {
+    color: var(--body-text-color);
+    background-color: var(--white-color);
+
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    padding-left: 0px;
+    margin: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 15px;
+    width: 1158px;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.list {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link.logo {
+    color: var(--primary-brand-color);
+
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.btn {
+    cursor: pointer;
+    font-family: inherit;
+
+    font-size: 16px;
+    line-height: 1.5;
+    align-items: center;
+    letter-spacing: 0.04em;
+}
+
+.section-title {
+    color: var(--dark-color);
+
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.card-title,
+.list-title {
+    color: var(--dark-color);
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.card .desc {
+    color: var(--body-text-color);
+}
+
+/** ---------------------- Header ---------------------- */
+
+.header {
+    background-color: var(--white-color);
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.header>.container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.part-logo-header {
+    color: var(--dark-color);
+}
+
+.header-list {
+    display: flex;
+    margin-left: 76px;
+}
+
+.header-list>.item:not(:first-child) {
+    margin-left: 40px;
+}
+
+.nav.link {
+    color: var(--dark-color);
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.nav.link:hover,
+.nav.link:focus {
+    color: var(--pressed-state-color);
+}
+
+.address-container {
+    margin-left: auto;
+}
+
+.contacts-list {
+    display: flex;
+}
+
+.contacts-list>.item:not(:first-child) {
+    margin-left: 40px;
+}
+
+.contact>.link {
+    display: block;
+}
+
+.contact {
+    color: var(--body-text-color);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.contact.link:hover,
+.contact.link:focus {
+    color: var(--pressed-state-color);
+}
+
+.link.current {
+    color: var(--pressed-state-color);
+}
+
+/** ---------------------- Footer ---------------------- */
+
+.footer {
+    background-color: var(--dark-color);
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer .logo {
+    padding: 0;
+}
+
+.part-logo-footer {
+    color: var(--light-mode-color);
+}
+
+.footer .text {
+    color: var(--accent-color);
+
+    width: 264px;
+    margin-top: 16px;
+}
+
+/** ----------- Main page style (index.html) ----------- */
+/** ---------------------- Hero ---------------------- */
+
+.hero {
+    background-color: var(--dark-color);
+
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+
+.hero>.container {
+    text-align: center;
+}
+
+.hero .section-title {
+    color: var(--white-color);
+
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero .btn {
+    color: var(--white-color);
+    background-color: var(--primary-brand-color);
+
+    border-color: transparent;
+    border-radius: 4px;
+
+    margin-top: 48px;
+    padding: 16px 32px;
+}
+
+.hero .btn:hover,
+.hero .btn:focus {
+    color: var(--white-color);
+    background-color: var(--pressed-state-color);
+}
+
+/** ---------------------- Section1: Featuress ---------------------- */
+
+.featuress {
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.featuress-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.featuress-list .item {
+    width: 264px;
+}
+
+.featuress .text {
+    margin-top: 8px;
+}
+
+/** ---------------------- Section2: Example ---------------------- */
+
+.example {
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+.example-list {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 72px;
+}
+
+
+/** ---------------------- Section3: Team ---------------------- */
+
+.team {
+    background-color: var(--light-mode-color);
+
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.team-cards {
+    display: flex;
+    margin-top: 72px;
+    justify-content: space-between;
+}
+
+.team-cards .card {
+    background-color: var(--white-color);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team .card-content {
+    padding: 32px 16px;
+}
+
+.team-cards .card-title {
+    text-align: center;
+}
+
+.team-cards .desc {
+    text-align: center;
+    margin-top: 8px;
+}
+
+/** ---------------------- Portfolio page style (portfolio.html) ---------------------- */
+/** ---------------------- Main content ---------------------- */
+
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+/** ---------------------- Buttons ---------------------- */
+
+.filter-btns {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-btns .item:not(:first-child) {
+    margin-left: 24px;
+}
+
+.filter-btns .btn {
+    color: var(--primary-brand-color);
+    background-color: var(--light-mode-color);
+    border-radius: 4px;
+    border: 1px solid var(--accent-color);
+
+    padding: 12px 24px;
+}
+
+.filter-btns .btn:hover,
+.filter-btns .btn:focus {
+    color: var(--white-color);
+    background-color: var(--pressed-state-color);
+    border-color: transparent;
+}
+
+/** ---------------------- Portfolio Cards ---------------------- */
+
+.portfolio .example-cards {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+    margin-top: 72px;
+}
+
+.portfolio .card-content {
+    padding: 32px 16px;
+    border: 1px solid var(--accent-color);
+    border-top: none;
+}
+
+.portfolio .desc {
+    margin-top: 8px;
+}
+
+.portfolio .card {
+    width: 360px;
+}
