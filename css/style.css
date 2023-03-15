@@ -362,18 +362,6 @@ img {
     width: 264px;
 }
 
-/* .featuress-list .item::before {
-    display: block;
-    width: 100%;
-    height: 112px;
-    content: "";
-    background-color: var(--light-mode-color);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 64px;
-    border-radius: 4px;
-} */
-
 .featuress-list .icon-container {
     background-color: var(--light-mode-color);
     border-radius: 4px;
