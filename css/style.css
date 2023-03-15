@@ -290,7 +290,8 @@ img {
     fill: currentColor;
 }
 
-.social-media-item .link:hover {
+.social-media-item .link:hover,
+.social-media-item .link:focus {
     background: var(--footer-icon-background-hover);
 }
 
