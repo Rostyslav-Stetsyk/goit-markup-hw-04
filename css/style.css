@@ -25,6 +25,9 @@ rgba(46, 47, 66, 0.7) - Hero background
     --light-mode-color: #F4F4FD;
     --accent-color: #E7E9FC;
     --hero-background: rgba(46, 47, 66, 0.7);
+    --customers-icon: #8E8F99;
+    --footer-icon-background: rgba(255, 255, 255, 0.1);
+    --footer-icon-background-hover: #31D0AA;
 }
 
 body {
@@ -266,6 +269,31 @@ img {
     letter-spacing: 0.02em;
 }
 
+.social-media-list {
+    display: flex;
+    gap: 16px;
+}
+
+.social-media-item .link {
+    display: block;
+    background-color: var(--footer-icon-background);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    color: var(--light-mode-color);
+}
+
+.social-media-item .icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+.social-media-item .link:hover {
+    background: var(--footer-icon-background-hover);
+}
+
 /** ----------- Main page style (index.html) ----------- */
 /** ---------------------- Hero ---------------------- */
 
@@ -333,7 +361,7 @@ img {
     width: 264px;
 }
 
-.featuress-list .item::before {
+/* .featuress-list .item::before {
     display: block;
     width: 100%;
     height: 112px;
@@ -343,24 +371,19 @@ img {
     background-position: center;
     background-size: 64px;
     border-radius: 4px;
+} */
+
+.featuress-list .icon-container {
+    background-color: var(--light-mode-color);
+    border-radius: 4px;
+    width: 100%;
+    height: 112px;
+    padding: 24px 100px;
 }
 
-.featuress-list .icon-strategy::before {
-    background-image: url(../images/index/antenna.svg);
-
-}
-
-.featuress-list .icon-punctuality::before {
-    background-image: url(../images/index/clock.svg);
-
-}
-
-.featuress-list .icon-diligence::before {
-    background-image: url(../images/index/diagram.svg);
-}
-
-.featuress-list .icon-technologies::before {
-    background-image: url(../images/index/astronaut.svg);
+.featuress-list .icon {
+    width: 64px;
+    height: 64px;
 }
 
 .featuress-list .list-title {
@@ -421,11 +444,70 @@ img {
     margin-top: 8px;
 }
 
+.card-links.list {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 8px;
+}
+
+.card-links .link {
+    display: block;
+    background-color: var(--primary-brand-color);
+    border-radius: 50%;
+    color: var(--light-mode-color);
+
+    padding: 12px;
+    height: 40px;
+}
+
+.card-links .icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.card-links .link:hover,
+.card-links .link:focus {
+    background-color: var(--pressed-state-color);
+}
+
 /** ---------------------- Customers ---------------------- */
 
 .customers {
     padding-top: 130px;
     padding-bottom: 120px;
+}
+
+.customers-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 72px;
+}
+
+.customers-item {
+    width: calc((100% - 24px * 5)/6);
+}
+
+.customers-item .link {
+    display: block;
+
+    border: 1px solid var(--customers-icon);
+    border-radius: 4px;
+    padding: 16px 32px;
+    color: var(--customers-icon);
+}
+
+.customers-item .icon {
+    fill: currentColor;
+    width: 104px;
+    height: 56px;
+}
+
+.customers-item .link:hover,
+.customers-item .link:focus {
+    border-color: var(--pressed-state-color);
+    color: var(--pressed-state-color);
 }
 
 /** ---------------------- Portfolio page style (portfolio.html) ---------------------- */
