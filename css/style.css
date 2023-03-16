@@ -270,6 +270,7 @@ img {
 }
 
 .social-media-list {
+    margin-top: 16px;
     display: flex;
     gap: 16px;
 }
